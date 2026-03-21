@@ -1,5 +1,4 @@
-import React, { ReactNode } from 'react';
-import { renderToString } from 'react-dom/server';
+import React from 'react';
 import { PageLayout } from './layout/PageLayout';
 import "./styles/global.css";
 import { ChildrenProps } from './types';
@@ -8,6 +7,7 @@ import { ChildrenProps } from './types';
 export default function App({ Component }: ChildrenProps) {
 	return (
 		<>
+			<script src="https://cdn.tailwindcss.com"></script>
 			<PageLayout>
 				<Component />
 			</PageLayout>

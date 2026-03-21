@@ -1,11 +1,10 @@
 import { Footer } from "../components/footer";
-import React from "react";
-import { ChildrenProps } from "../types";
 import { Header } from "../components/header";
+import React from "react";
 
-export function PageLayout({ children }: ChildrenProps) {
+export function PageLayout({ children }) {
     return (
-        <div className=".container">
+        <div>
             <Header />
             {children}
             <Footer />

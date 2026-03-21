@@ -14,10 +14,6 @@
     filter: drop-shadow(0 0 2em #646cffaa);
 }
 
-
-
-
-
 h1 {
     font-size: larger;
 }
@@ -25,8 +21,6 @@ h1 {
 h2 {
     font-size: medium;
 }
-
-
 
 .row,
 .container,
@@ -54,8 +48,6 @@ h2 {
 .footer {
     width: 100%;
 }
-
-
 
 .button {
     display: inline-block;

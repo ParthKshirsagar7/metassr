@@ -1,5 +1,5 @@
-import { ReactNode } from "react"
+import React from "react";
 
-export type ChildrenProps {
-    children: ReactNode
+export type ChildrenProps = {
+    Component: React.ComponentType;
 }

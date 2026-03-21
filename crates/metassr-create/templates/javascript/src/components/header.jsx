@@ -1,18 +1,15 @@
-import metacallLogo from "../../static/assets/metacall-logo.png"
-import { Link } from "./link"
+import React from 'react';
 
 export function Header() {
     return (
-        <div>
-            <div>
-                <Link href="https://metacall.io">
-                    <img src={metacallLogo} className="logo" alt="Metacall logo" />
-                </Link>
-            </div>
-            <div>
-                <h1>MetaSSR</h1>
-                <p>Server-Side Rendering Framework built with <Link href="https://github.com/metacall/core">Metacall</Link></p>
-            </div>
-        </div>
+        <header className="p-4 bg-white border-b shadow-sm">
+            <nav>
+                <ul className="flex gap-6 list-none m-0 p-0">
+                    <li><a href="/" className="text-blue-600 hover:underline font-medium">Index</a></li>
+                    <li><a href="/home" className="text-blue-600 hover:underline font-medium">Home</a></li>
+                    <li><a href="/api-client" className="text-blue-600 hover:underline font-medium">API Client</a></li>
+                </ul>
+            </nav>
+        </header>
     )
 }
