@@ -166,6 +166,11 @@ impl Server {
             }
         }
 
+        let (router_with_faas, _faas_state) =
+            metassr_api_handler::faas::register_faas_routes(app.app());
+        app = RouterMut::from(router_with_faas);
+        info!("FaaS RPC endpoint registered at POST /rpc");
+
         PagesHandler::new(&mut app, &dist_dir, self.configs.running_type)?.build()?;
 
         // Apply middleware again after PagesHandler to catch dynamic HTML

@@ -26,6 +26,8 @@
 //! module.exports = { GET, POST };
 //! ```
 
+pub mod faas;
+pub mod registry;
 pub mod scanner;
 pub mod types;
 
